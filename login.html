@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/login.css">
+    <title>Login - Portal de Notícias</title>
+</head>
+<body>
+    <header class="header">
+        <img class="header-logo" src="img/headerLogo.png" alt="Logo do PTI">
+        <div class="header-center">
+            <h1>Portal de Notícias</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="index.html#destaques">Destaques</a></li>
+                    <li><a href="index.html#ultimas">Últimas</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="login-form">
+            <a href="index.html" class="btn-voltar">Voltar</a>
+        </div>
+    </header>
+    <main class="content">
+        <section class="login-section">
+            <h2>Login</h2>
+            <form class="form-login" action="/login" method="post">
+                <input type="text" name="username" placeholder="Usuário" required>
+                <input type="password" name="password" placeholder="Senha" required>
+                <button type="submit">Entrar</button>
+                <p class="register"><a href="/register">Registrar-se</a></p>
+            </form>
+                </section>
+    </main>
+    <script src="js/login.js"></script>
+</body>
+</html>
+```

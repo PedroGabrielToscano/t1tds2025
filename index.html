@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/home.css">
+    <title>Portal de Notícias</title>
+</head>
+
+<body>
+    <header class="header">
+        <img class="header-logo" src="img/headerLogo.png" alt="Logo do PTI">
+        <div class="header-center">
+            <h1>Portal de Notícias</h1>
+            <nav>
+                <ul>
+                    <li><a href="#destaques">Destaques</a></li>
+                    <li><a href="#ultimas">Últimas</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="login-form">
+            <a href="login.html" class="btn-entrar">Entrar</a>
+        </div>
+    </header>
+    <main class="content">
+        <section id="destaques">
+            <h2>Destaques</h2>
+            <div class="news-grid">
+                <article class="news-card card-destaque">
+                    <figure class="news-card-image">
+                        <img src="img/noticiaPrincipal.jpg" alt="Imagem de onça pintada">
+                    </figure>
+                    <div class="news-card-content">
+                        <span class="news-card-tag"></span>
+                        <h3>Onça Pintada é vista andando no campus</h3>
+                        <p>
+                            <mark>Especialistas</mark> apontam que o impacto será global.</p>
+                        <details>
+                            <summary>Leia mais</summary>
+                            <p>A onça pintada, um dos maiores felinos das Américas, foi avistada recentemente
+                                caminhando pelo campus da universidade. O avistamento gerou grande
+                                comoção entre alunos e professores, que se mobilizaram para proteger o
+                                animal e garantir sua segurança.</p>
+                        </details>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section id="ultimas">
+            <h2>Últimas Notícias</h2>
+            <div class="news-grid">
+                <article class="news-card">
+                    <div class="news-card-content">
+                        <span class="news-card-tag">Ciência</span>
+                        <h3>Descoberta científica importante</h3>
+                        <p>Pesquisadores anunciaram uma descoberta que pode revolucionar a medicina moderna.</p>
+                        <span class="news-card-date">17/10/2025</span>
+                    </div>
+                </article>
+                <article class="news-card">
+                    <div class="news-card-content">
+                        <span class="news-card-tag">Esportes</span>
+                        <h3>Evento esportivo reúne multidão</h3>
+                        <p>Milhares de pessoas compareceram ao maior evento esportivo do ano.</p>
+                        <span class="news-card-date">16/10/2025</span>
+                    </div>
+                </article>
+                <article class="news-card">
+                    <div class="news-card-content">
+                        <span class="news-card-tag">Política</span>
+                        <h3>Nova lei entra em vigor</h3>
+                        <p>Legislação aprovada visa melhorar a qualidade de vida dos cidadãos.</p>
+                        <span class="news-card-date">15/10/2025</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section id="contato">
+            <h2>Contato</h2>
+            <div class="card-form">
+                <form class="contact-form" autocomplete="on">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="3" required></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </section>
+        <aside class="enquete-card">
+            <h3>Enquete</h3>
+            <form>
+                <fieldset>
+                    <legend>Qual tema você mais gosta?</legend>
+                    <input type="radio" id="tecnologia" name="tema" value="tecnologia">
+                    <label for="tecnologia">Tecnologia</label><br>
+                    <input type="radio" id="esportes" name="tema" value="esportes">
+                    <label for="esportes">Esportes</label><br>
+                    <input type="radio" id="politica" name="tema" value="politica">
+                    <label for="politica">Política</label><br>
+                </fieldset>
+                <button type="submit">Votar</button>
+            </form>
+        </aside>
+    </main>
+    <footer class="footer">
+        <p>© 2024 Noticias PTI</p>
+    </footer>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
