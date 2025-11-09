@@ -384,3 +384,21 @@ address {
     text-align: center;
     margin-top: 32px;
 }
+/* Requisito: display: none */
+.hidden {
+    display: none;
+}
+/* Requisito: position: fixed */
+.back-to-top {
+    position: fixed; /* O elemento permanece fixo na tela */
+    bottom: 20px;
+    right: 20px;
+    background-color: #dc3545; /* Um vermelho, só para destacar */
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
